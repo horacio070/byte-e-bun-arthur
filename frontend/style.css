@@ -1,0 +1,120 @@
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #c9c9c9;
+  color: #1b2a4a;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.5;
+
+}
+
+
+h1 {
+
+  color: #1b2a4a;
+
+}
+
+
+  section {
+  background-color: #ffffff;
+  border: 1px solid #d8e6e2;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 20px 0;
+
+}
+
+
+h2 {
+
+  font-size: 16px;
+  color: #0f6f6b;
+  margin-top: 0;
+
+}
+
+
+.explicacao {
+
+  color: #5a6b72;
+  font-style: italic;
+
+}
+
+
+button {
+
+  background-color: #0f6f6b;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 4px 4px 4px 0;
+
+}
+
+
+button:hover {
+
+  background-color: #3fbf9c;
+
+}
+
+
+input,
+select {
+    width: 250px;
+    padding: 10px 12px;
+    margin: 8px 0;
+
+    border: 2px solid #ccc;
+    border-radius: 8px;
+
+    background-color: white;
+    color: #333;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    outline: none;
+    transition: 0.2s;
+}
+
+select:hover {
+    border-color: #888;
+}
+
+select:focus {
+    border-color: #333;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+
+}
+
+
+label {
+
+  display: block;
+  margin-bottom: 8px;
+
+}
+
+
+p {
+
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+
+#cupom {
+
+  white-space: pre-line;
+
+}
+
