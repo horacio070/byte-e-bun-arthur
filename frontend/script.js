@@ -1,4 +1,4 @@
-const URL_API = "https://byte-e-bun-api.onrender.com";
+const URL_API = "https://byte-e-bun-arthur.onrender.com";
 
 async function carregarCardapio() {
   const resposta = await fetch(`${URL_API}/cardapio`);
