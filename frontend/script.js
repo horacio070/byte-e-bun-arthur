@@ -1,7 +1,7 @@
 const URL_API = "https://byte-e-bun-api.onrender.com";
 
 async function carregarCardapio() {
-  const resposta = await fetch("http://localhost:3000/cardapio");
+  const resposta = await fetch(`${URL_API}/cardapio`);
   const dados = await resposta.json();
   console.log(dados);
 }
@@ -24,7 +24,7 @@ botaoCalcular.addEventListener("click", async function () {
   const recheio = selectRecheio.value;
   const molho = selectMolho.value;
 
-  const resposta = await fetch("http://localhost:3000/pedido", {
+  const resposta = await fetch(`${URL_API}/pedido`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ pao, recheio, molho }),
@@ -37,7 +37,7 @@ botaoCalcular.addEventListener("click", async function () {
 
 
 async function carregarCardapio() {
-    const resposta = await fetch("http://localhost:3000/cardapio");
+    const resposta = await fetch(`${URL_API}/cardapio`);
     const dados = await resposta.json();
 
     popularSelect("selectPao", dados.filter(item => item.categoria === "pao"));
