@@ -1,8 +1,11 @@
 const express = require("express");
-const app = express();
-const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:5500";
-app.use(cors({ origin: FRONTEND_URL }));
+const cors = require("cors");
 
+const app = express();
+
+const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:5500";
+
+app.use(cors({ origin: FRONTEND_URL }))
 
 const cardapio = [
   {categoria: "pao", nome:"Frances", preco: 1.5},
