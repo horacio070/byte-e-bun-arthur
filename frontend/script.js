@@ -1,3 +1,4 @@
+const URL_API = "https://byte-e-bun-api.onrender.com";
 
 async function carregarCardapio() {
   const resposta = await fetch("http://localhost:3000/cardapio");
